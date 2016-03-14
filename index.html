@@ -1,7 +1,9 @@
+---
+---
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Mixim</title>
+	<title>Mixim – the fastest way in the world to make music remotely</title>
 
 	<link rel="stylesheet" href="js/animsition.min.css">
 	<link rel="stylesheet" href="fonts/ptsans_regular_macroman/stylesheet.css">
@@ -49,7 +51,7 @@
 
 <body>
 
-<?php include 'header.php' ?>
+{% include header.inc.html %}
 
 <!--START LEAD IMAGE CONTENT-->
 <div class="lead-image-wrap" style="background-image:url('images/lead-image.jpg');">
@@ -58,7 +60,7 @@
 		<div class="lead-image-content">
 
 			<!--Start Lead Image Logo-->
-			<?php include 'svgs/lead-image-logo.php' ?>
+			{% include lead-image-logo.svg %}
 			<!--End Lead Image Logo-->
 			
 			<!--Start Lead Image Text-->
@@ -119,7 +121,7 @@
 	<div class="inner-content">
 				
 		<!--Start One Place Image-->
-		<?php include 'svgs/one-place.php' ?>
+		{% include one-place.inc.html %}
 		<!--End One Place Image-->
 		
 		<div class="info-text-wrap left red out-of-view out-left">
@@ -138,7 +140,7 @@
 	<div class="inner-content">
 		
 		<!--Start Upto Date Image-->
-		<?php include 'svgs/upto-date.php' ?>
+		{% include upto-date.inc.html %}
 		<!--End Upto Date Image-->
 		
 		<div class="info-text-wrap right">
@@ -155,7 +157,7 @@
 <!--START INFOGRAPHIC CONTENT-->
 <div id="fast" class="infographic-section" style="background-color: #ffffff;">
 
-	<?php include 'svgs/fast.php' ?>
+	{% include fast.inc.html %}
 	
 	<div class="inner-content">
 		
@@ -190,13 +192,13 @@
 	<h1>Two quality modes for speed and perfect audio.</h1>
 	
 	<div class="quality-mode-image-wrap">
-		<?php include 'svgs/quality-mode.php' ?>
+		{% include quality-mode.svg %}
 	</div>
 	
 	<div class="quality-column-wrap">
 		<div class="quality-column">
 			<div class="quality-image">
-				<?php include 'svgs/speed-mode.php' ?>
+				{% include speed-mode.svg %}
 			</div>
 			<p><strong>Speed mode</strong></br>
 			Your projects start in speed mode.</p>
@@ -208,7 +210,7 @@
 		
 		<div class="quality-column">
 			<div class="quality-image">
-				<?php include 'svgs/lossless-mode.php' ?>
+				{% include lossless-mode.svg %}
 			</div>
 			<p><strong>Lossless mode</strong></br>
 			Want a full-res bounce of your masterpiece? Switch to Lossless.</p>
@@ -275,10 +277,10 @@
 				</div>
 				<div class="team-member-text">
 					<div class="title">Joe Rickerby</div>
-					<div class="subtitle">Founder & Developer</div>
+					<div class="subtitle">Founder &amp; Developer</div>
 				</div>
 				<div class="team-member-twitter">
-					<?php include 'svgs/twitter-logo.php' ?>
+					{% include twitter-logo.svg %}
 				</div>
 			</a>
 			
@@ -288,10 +290,10 @@
 				</div>
 				<div class="team-member-text">
 					<div class="title">Ben Pawle</div>
-					<div class="subtitle">Founder & Designer</div>
+					<div class="subtitle">Founder &amp; Designer</div>
 				</div>
 				<div class="team-member-twitter">
-					<?php include 'svgs/twitter-logo.php' ?>
+					{% include twitter-logo.svg %}
 				</div>
 			</a>
 			
@@ -304,7 +306,7 @@
 					<div class="subtitle">Engagement</div>
 				</div>
 				<div class="team-member-twitter">
-					<?php include 'svgs/twitter-logo.php' ?>
+					{% include twitter-logo.svg %}
 				</div>
 			</a>
 			
@@ -317,7 +319,7 @@
 					<div class="subtitle">Developer</div>
 				</div>
 				<div class="team-member-twitter">
-					<?php include 'svgs/twitter-logo.php' ?>
+					{% include twitter-logo.svg %}
 				</div>
 			</a>
 			
@@ -327,7 +329,7 @@
 </div>
 <!--END HOMEPAGE TEAM CONTENT-->
 		
-<?php include 'footer.php' ?>
+{% include footer.inc.html %}
 
 </body>
 </html>
