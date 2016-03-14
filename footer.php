@@ -1,0 +1,49 @@
+<!--START FOOTER NEWSLETTER CONTENT-->
+<div class="footer-newsletter-wrap">
+	<div class="inner-content">
+	
+		<p><strong>If you’d like us to email you when we release, stick your address here</strong></p>
+	
+		<div class="footer-newsletter">
+			<div id="mc_embed_signup">
+				<form action="//getmixim.us11.list-manage.com/subscribe/post?u=d9e396b13d285b753601ba961&amp;id=66b1977fcb" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
+					
+					<div id="mc_embed_signup_scroll">
+						<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="name@email.com" required="">
+						<input type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe" class="button">
+					</div>
+					<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+					<div style="position: absolute; left: -5000px;" aria-hidden="true">
+						<input type="text" name="b_d9e396b13d285b753601ba961_66b1977fcb" tabindex="-1" value="">
+					</div>
+				
+				</form>
+			</div>
+		</div>
+
+	</div>
+		
+	<canvas id="dancingDots" width="1548" height="200"></canvas>		
+
+</div>
+<!--END FOOTER NEWSLETTER CONTENT-->
+
+<!--START BOTTOM FOOTER  CONTENT-->
+<div class="bottom-footer-wrap">
+
+	<div class="footer-icons">
+		<a class="footer-icon link" href="https://twitter.com/getmixim" target="_blank"><?php include 'svgs/footer-twitter.php' ?></a>
+		<div class="footer-icon"><?php include 'svgs/footer-logo.php' ?></div>
+		<a class="footer-icon link" href="https://angel.co/mixim" target="_blank"><?php include 'svgs/footer-angel.php' ?></a>
+	</div>
+	
+	<h5><a href="mailto:hello@getmixim.com">hello@getmixim.com</a></h5>
+	
+	<h6>© 2015 Mixim Technology Ltd</h6>
+
+</div>
+<!--END BOTTOM FOOTER  CONTENT-->
+
+<!--End Animsition Wrapper-->
+</div>
+<!--End Animsition Wrapper-->
