@@ -1,29 +1,29 @@
-/*! inViewport 0.0.1 
+/*! inViewport 0.0.1
  *  jQuery plugin by Moob
- * ======================== 
- *  (requires jQuery) 
- */  
+ * ========================
+ *  (requires jQuery)
+ */
 (function ($) {
 
     var vph=0;
     function getViewportDimensions(){
         vph = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
     }
-    getViewportDimensions();    
+    getViewportDimensions();
     //on resize/scroll
     $(window).on('resize orientationChanged', function(){
         getViewportDimensions();
-    });            
-    
-    $.fn.inViewport = function (whenInView, whenNotInView) {                  
+    });
+
+    $.fn.inViewport = function (whenInView, whenNotInView) {
         return this.each(function () {
             var el = $(this),
                 inviewalreadycalled = false,
-                notinviewalreadycalled = false;                            
+                notinviewalreadycalled = false;
             //on resize/scroll
             $(window).on('resize orientationChanged scroll', function(){
                 checkInView();
-            });               
+            });
             function checkInView(){
                 var rect = el[0].getBoundingClientRect(),
                     t = rect.top,
@@ -43,7 +43,7 @@
                 }
             }
             //initial check
-            checkInView();                
+            checkInView();
         });
-    }             
+    }
 }(jQuery));
