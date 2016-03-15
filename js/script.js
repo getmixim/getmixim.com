@@ -61,44 +61,26 @@
     //Homepage Slideshow Cycle Function
 
     $(window).load(function () {
-                        
+        var slideshowSpeed = 700;
+
         if ($(window).width() < 1000) {
-                
-            $(".homepage-slideshow").cycle({
-                fx: 'scrollHorz',
-                speed: 200,
-                timeout: 12000,
-                next: '.slideshow-nav#right',
-                prev: '.slideshow-nav#left',
-                slideResize: false,
-                before: function(){
-                    $(this).parent().find('.current').removeClass('current');
-                },
-                after: function(){
-                    $(this).addClass('current');
-                }
-            });
-        
+            slideshowSpeed = 200;
         }
-        else {
-                
-            $(".homepage-slideshow").cycle({
-                fx: 'scrollHorz',
-                speed: 700,
-                timeout: 12000,
-                next: '.slideshow-nav#right',
-                prev: '.slideshow-nav#left',
-                slideResize: false,
-                before: function(){
-                    $(this).parent().find('.current').removeClass('current');
-                },
-                after: function(){
-                    $(this).addClass('current');
-                }
-            });
-        
-        }
-            
+
+        $(".homepage-slideshow").cycle({
+            fx: 'scrollHorz',
+            speed: slideshowSpeed,
+            timeout: 12000,
+            next: '.slideshow-nav#right',
+            prev: '.slideshow-nav#left',
+            slideResize: false,
+            before: function(){
+                $(this).parent().find('.current').removeClass('current');
+            },
+            after: function(){
+                $(this).addClass('current');
+            }
+        });
     });
 
     //Hey there, what you doing here? Nosey parker.
