@@ -1092,9 +1092,12 @@ TEAM SECTION STYLES --------------------
 .team-section-wrap .team-member 
 .team-member-photo-wrap .team-member-photo {
 	position: absolute;
-	width: 110px; height: 110px;
-	top: 50%; margin-top: -55px;
-	left: 50%; margin-left: -55px;
+	width: 110px;
+	height: 110px;
+	top: 50%;
+	margin-top: -55px;
+	left: 50%;
+	margin-left: -55px;
 	-webkit-border-radius: 55px;
 	-moz-border-radius: 55px;
 	-ms-border-radius: 55px;
@@ -1104,7 +1107,7 @@ TEAM SECTION STYLES --------------------
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-	background-size: cover;	
+	background-size: 220px;
 }
 
 .team-section-wrap .team-member 
