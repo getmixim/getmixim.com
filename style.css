@@ -219,6 +219,25 @@ p:last-child {
     margin-left: 0 !important;
 }
 
+.not-mobile {
+	display: block;
+}
+
+@media only screen and (max-width: 780px) {
+.not-mobile {
+	display: none;
+}
+}
+
+.mobile {
+	display: none;
+}
+
+@media only screen and (max-width: 780px) {
+.mobile {
+	display: block;
+}
+}
 /*
 HEADING STYLES --------------------
 */
@@ -380,7 +399,8 @@ LEAD IMAGE STYLES --------------------
 .lead-image-wrap .lead-image-content-wrap 
 .lead-image-content .lead-image-text {
 	font-size: 19px;
-	margin-top: 15px;
+	margin-top: 18px;
+	line-height: 27px;
 }
 }
 
