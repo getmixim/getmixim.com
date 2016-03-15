@@ -1,0 +1,58 @@
+{
+  "IndexDocument": {
+    "Suffix": "index.html"
+  },
+  "ErrorDocument": {
+    "Key": "error.html"
+  },
+  "RoutingRules": [
+    {
+      "Condition": { "KeyPrefixEquals": "acceptinvite/" },
+      "Redirect": { "HostName": "app.getmixim.com" }
+    },
+    {
+      "Condition": { "KeyPrefixEquals": "beta" },
+      "Redirect": { "HostName": "app.getmixim.com" }
+    },
+    {
+      "Condition": { "KeyPrefixEquals": "demo" },
+      "Redirect": { "HostName": "app.getmixim.com" }
+    },
+    {
+      "Condition": { "KeyPrefixEquals": "prerelease" },
+      "Redirect": { "HostName": "app.getmixim.com" }
+    },
+    {
+      "Condition": { "KeyPrefixEquals": "sae" },
+      "Redirect": { "HostName": "app.getmixim.com" }
+    },
+    {
+      "Condition": { "KeyPrefixEquals": "acm" },
+      "Redirect": { "HostName": "app.getmixim.com" }
+    },
+    {
+      "Condition": { "KeyPrefixEquals": "pointblank" },
+      "Redirect": { "HostName": "app.getmixim.com" }
+    },
+    {
+      "Condition": { "KeyPrefixEquals": "uwl" },
+      "Redirect": { "HostName": "app.getmixim.com" }
+    },
+    {
+      "Condition": { "KeyPrefixEquals": "testerinvite" },
+      "Redirect": { "HostName": "app.getmixim.com" }
+    },
+    {
+      "Condition": { "KeyPrefixEquals": "testersignup" },
+      "Redirect": { "HostName": "app.getmixim.com" }
+    },
+    {
+      "Condition": { "KeyPrefixEquals": "appcast.xml" },
+      "Redirect": { "HostName": "app.getmixim.com" }
+    },
+    {
+      "Condition": { "KeyPrefixEquals": "appcastbeta.xml" },
+      "Redirect": { "HostName": "app.getmixim.com" }
+    }
+  ]
+}
