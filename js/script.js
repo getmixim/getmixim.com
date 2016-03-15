@@ -15,9 +15,7 @@
     //Animsition Page Transitions Functions
 
     $(window).load(function() {
-
         $('.animsition').animsition({
-
             inClass: 'fade-in',
             outClass: 'fade-out',
             inDuration: 1300,
@@ -31,29 +29,26 @@
                 '-webkit-animation-duration',
                 '-o-animation-duration'
             ],
-            //'unSupportCss' option allows you to disable the 'animsition' in case the css property in the array is not supported by your browser. 
+            //'unSupportCss' option allows you to disable the 'animsition' in case the css property in the array is not supported by your browser.
             //The default setting is to disable the 'animsition' in a browser that does not support 'animation-duration'.
 
             overlay: false,
             overlayClass: 'animsition-overlay-slide',
             overlayParentElement: 'body'
         });
-
     });
-   
+
     //Fading Section Functions
 
     $(window).load(function () {
-      
         $('.out-of-view').inViewport(
             function(){$(this).addClass("am-in-view");},
             function(){$(this).removeClass("none");}
         );
-        
     });
 
     //Homepage Slideshow Cycle & Caption Font Size Function
-    
+
     $(window).load(function(){
         $("h1").fitText(1.6, { minFontSize: '30px', maxFontSize: '40px' });
     });
@@ -84,5 +79,4 @@
     });
 
     //Hey there, what you doing here? Nosey parker.
-
 })(jQuery);
