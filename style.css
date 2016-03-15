@@ -1183,11 +1183,11 @@ TEAM SECTION STYLES --------------------
 
 .team-section-wrap .team-member 
 .team-member-twitter path {
-	-webkit-transition: fill 300ms ease-in-out;
-    -moz-transition: fill 300ms ease-in-out;
-    -ms-transition: fill 300ms ease-in-out;
-    -o-transition: fill 300ms ease-in-out;
-    transition: fill 300ms ease-in-out;
+	-webkit-transition: fill 250ms ease-out;
+	-moz-transition: fill 250ms ease-out;
+	-ms-transition: fill 250ms ease-out;
+	-o-transition: fill 250ms ease-out;
+	transition: fill 250ms ease-out;
 }
 
 .team-section-wrap .team-member:hover 
@@ -1280,11 +1280,11 @@ FOOTER NEWSLETTER STYLES --------------------
 	text-align: center;
 	-webkit-font-smoothing: antialiased !important;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
-    -webkit-transition: all 300ms ease-in-out;
-    -moz-transition: all 300ms ease-in-out;
-    -ms-transition: all 300ms ease-in-out;
-    -o-transition: all 300ms ease-in-out;
-    transition: all 300ms ease-in-out;
+    -webkit-transition: all 250ms ease-out;
+    -moz-transition: all 250ms ease-out;
+    -ms-transition: all 250ms ease-out;
+    -o-transition: all 250ms ease-out;
+    transition: all 250ms ease-out;
     cursor: pointer;
 }
 
