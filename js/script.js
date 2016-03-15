@@ -1,5 +1,5 @@
 (function($) {
-
+    'use strict';
     //Document Fade In Function
 
     $(window).load(function() {});
