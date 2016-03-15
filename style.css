@@ -1238,27 +1238,27 @@ FOOTER NEWSLETTER STYLES --------------------
 
 .footer-newsletter-wrap .footer-newsletter 
 .email::-webkit-input-placeholder {
-   color: #9C85FF;
+   color: #CBBCFF;
 }
 
 .footer-newsletter-wrap .footer-newsletter 
 .email:-moz-placeholder { /* Firefox 18- */
-   color: #9C85FF;  
+   color: #CBBCFF;  
 }
 
 .footer-newsletter-wrap .footer-newsletter 
 .email::-moz-placeholder  {  /* Firefox 19+ */
-   color: #9C85FF;  
+   color: #CBBCFF;  
 }
 
 .footer-newsletter-wrap .footer-newsletter 
 .email:-ms-input-placeholder {  
-   color: #9C85FF;  
+   color: #CBBCFF;  
 }
 
 .footer-newsletter-wrap .footer-newsletter 
 .email:-o-input-placeholder {  
-   color: #9C85FF;  
+   color: #CBBCFF;  
 }
 
 .footer-newsletter-wrap .footer-newsletter 
