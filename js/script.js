@@ -65,7 +65,7 @@
 		if ($(window).width() < 1000) {
 			
 		$(".homepage-slideshow").cycle({
-		    fx: 'scrollLeft',
+		    fx: 'scrollHorz',
 		    speed: 200,
 		    timeout: 12000,
 		    next: '.slideshow-nav#right',
@@ -83,7 +83,7 @@
 		else {
 			
 		$(".homepage-slideshow").cycle({
-		    fx: 'scrollLeft',
+		    fx: 'scrollHorz',
 		    speed: 700,
 		    timeout: 12000,
 		    next: '.slideshow-nav#right',
