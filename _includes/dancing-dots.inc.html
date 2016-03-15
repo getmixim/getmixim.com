@@ -1,0 +1,56 @@
+
+<canvas id="dancingDots" width="1548" height="200"></canvas>
+
+<script>
+    $(window).load(function () {
+        var canvas = document.getElementById('dancingDots');
+        var numDots;
+        var yPositions = [];
+
+        resize = function() {
+            canvas.width = $('body').width();
+            numDots = Math.floor(canvas.width * 0.05);
+            yPositions = [];
+
+            for (var i = 0; i < numDots; i++) {
+                yPositions[i] = 0;
+            }
+            
+        }
+        $(window).resize(resize);
+        resize();
+        
+        if (canvas.getContext) {
+            var ctx = canvas.getContext('2d');
+        
+            function step() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                ctx.fillStyle = '{{include.color | default:"grey"}}';
+                for (var i = 0; i < numDots; i++) {
+                    var r = Math.random() - 0.5;
+                    r *= 0.1;
+                    yPositions[i] = yPositions[i] * 0.95 + r * 0.1;
+        
+                    yPositions[i] *= 1;
+        
+                    var path = new Path2D();
+                    var x = i / (numDots - 1) * canvas.width;
+                    var y = yPositions[i] * 1000 + canvas.height / 2;
+                    var radius = 10;
+                    path.arc(x, y, radius, 0, 2 * Math.PI, false);
+        
+                    ctx.fill(path);
+        
+                    if (i > 0) {
+                        yPositions[i - 1] -= yPositions[i] * 0.5;
+                    }
+                    if (i < numDots - 1) {
+                        yPositions[i + 1] += yPositions[i] * 0.5;
+                    }
+                }
+            }
+        
+            setInterval(step, 1000 / 30);
+        }
+    });
+</script>

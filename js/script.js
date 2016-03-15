@@ -101,57 +101,6 @@
 	        
     });
 
-	$(window).load(function () {
-
-		var canvas = document.getElementById('dancingDots');
-		
-		resize = function() {
-		    canvas.width = $('body').width();
-		}
-		$(window).resize(resize);
-		resize();
-		
-		if (canvas.getContext) {
-		    var ctx = canvas.getContext('2d');
-		    var numDots = 50;
-		    var yPositions = [];
-		
-		    for (var i = 0; i < numDots; i++) {
-		        yPositions[i] = 0;
-		    }
-		
-		    function step() {
-		        ctx.clearRect(0, 0, canvas.width, canvas.height);
-		        ctx.fillStyle = 'white';
-		        for (var i = 0; i < numDots; i++) {
-		            var r = Math.random() - 0.5;
-		            r *= 0.1;
-		            yPositions[i] = yPositions[i] * 0.95 + r * 0.1;
-		
-		            yPositions[i] *= 1;
-		
-		            var path = new Path2D();
-		            var x = i / (numDots - 1) * canvas.width;
-		            var y = yPositions[i] * 1000 + canvas.height / 2;
-		            var radius = 10;
-		            path.arc(x, y, radius, 0, 2 * Math.PI, false);
-		
-		            ctx.fill(path);
-		
-		            if (i > 0) {
-		                yPositions[i - 1] -= yPositions[i] * 0.5;
-		            }
-		            if (i < numDots - 1) {
-		                yPositions[i + 1] += yPositions[i] * 0.5;
-		            }
-		        }
-		    }
-		
-		    setInterval(step, 1000 / 30);
-		}
-	
-	});
-
     //Hey there, what you doing here? Nosey parker.
 
 })(jQuery);
