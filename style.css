@@ -48,7 +48,7 @@ body {
 	color: #000000;
 	background-color: #ffffff;
 	text-rendering: optimizeLegibility;
-	font-family: 'pt_sansregular';
+	font-family: 'PT Sans', 'Helvetica', 'Arial', sans-serif;
 	-webkit-text-size-adjust: 100%;
 }
 
@@ -107,6 +107,7 @@ body a {
 input {
     -webkit-appearance: none;
     border-radius: 0;
+    font-family: inherit;
 }
 
 textarea:focus, input:focus, select:focus { 
@@ -114,7 +115,7 @@ textarea:focus, input:focus, select:focus {
 }
 
 p {
-	font-family: 'pt_sansregular';
+	font-weight: normal;
 	font-size: 19px; line-height: 1.3em;
 	margin-bottom: 1.3em;
 	color: #000000;
@@ -130,9 +131,8 @@ p em {
 }
 
 p strong {
-	font-family: 'pt_sansbold';
 	font-style: normal;
-	font-weight: normal;
+	font-weight: bold;
 }
 
 p:last-child {
@@ -243,23 +243,24 @@ HEADING STYLES --------------------
 */
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'pt_sansbold';
 	margin-bottom: .9em;
+	font-weight: bold;
 }
 
 h1 {
-	font-family: 'pt_sansbold';
-	font-size: 40px; line-height: 1.2em;
-	font-style: normal; font-weight: normal;
+	font-size: 40px;
+	line-height: 1.2em;
+	font-style: normal;
 	text-align: center;
 	color: #000000;
 }
 
 h2 {
-	font-family: 'pt_sansregular';
-	font-size: 28px; line-height: 1.2em;
-	font-style: normal; font-weight: normal;
+	font-size: 28px;
+	line-height: 1.2em;
+	font-style: normal;
 	text-align: center;
+	font-weight: normal;
 }
 
 @media only screen and (max-width: 780px) {
@@ -269,23 +270,25 @@ h2 {
 }
 
 h3 {
-	font-family: 'pt_sansbold';
-	font-size: 26px; line-height: 1.2em;
-	font-style: normal; font-weight: normal;
+	font-size: 26px;
+	line-height: 1.2em;
+	font-style: normal; 
 	text-align: left;
 }
 
 h5 {
-	font-family: 'pt_sansregular';
-	font-size: 16px; line-height: 1.2em;
-	font-style: normal; font-weight: normal;
+	font-size: 16px;
+	line-height: 1.2em;
+	font-style: normal;
+	font-weight: normal;
 	text-align: center;
 }
 
 h6 {
-	font-family: 'pt_sansregular';
-	font-size: 11px; line-height: 1.2em;
-	font-style: normal; font-weight: normal;
+	font-size: 11px;
+	line-height: 1.2em;
+	font-style: normal;
+	font-weight: normal;
 }
 
 /*
@@ -390,9 +393,9 @@ LEAD IMAGE STYLES --------------------
 	position: relative;
 	width: 100%; height: auto;
 	margin-top: 20px;
-	font-family: 'pt_sansbold';
 	font-size: 22px; line-height: 1.2em;
 	color: #ffffff;
+	font-weight: bold;
 }
 
 @media only screen and (max-width: 780px) {
@@ -450,7 +453,7 @@ LEAD IMAGE STYLES --------------------
 	border: none;
 	background-color: #ddd5f0;
 	color: #9C85FF;
-	font-family: 'pt_sansregular';
+	font-weight: normal;
 	font-size: 16px; line-height: 28px;
 	text-indent: 12px;
 	text-align: left;
@@ -612,7 +615,7 @@ HOMEPAGE-TEXT STYLES --------------------
 .quality-column-wrap .quality-column {
 	display: inline-block;
 	width: 335px; height: auto;
-	font-family: 'pt_sansregular';
+	font-weight: normal;
 	font-size: 20px; line-height: 1.2em;
 	color: #000000;
 }
@@ -651,8 +654,8 @@ HOMEPAGE-TEXT STYLES --------------------
 }
 
 .quality-column-wrap .quality-column strong {
-	font-style: normal; font-weight: normal;
-	font-family: 'pt_sansbold';
+	font-style: normal; 
+	font-weight: bold;
 	font-size: 24px;
 }
 
@@ -799,7 +802,7 @@ INFOGRAPHIC SECTION STYLES --------------------
 .infographic-section .info-text-wrap 
 .info-text .title {
 	position: relative;
-	font-family: 'pt_sansbold';
+	font-weight: bold;
 	font-size: 30px; line-height: 1.2em;
 	color: #ff5c59;
 }
@@ -814,7 +817,7 @@ INFOGRAPHIC SECTION STYLES --------------------
 .infographic-section .info-text-wrap 
 .info-text .subtitle {
 	position: relative;
-	font-family: 'pt_sansregular';
+	font-weight: normal;
 	font-size: 21px; line-height: 1.2em;
 	color: #000000;
 }
@@ -1102,8 +1105,10 @@ TEAM SECTION STYLES --------------------
 
 .team-section-wrap .team-member {
 	display: inline-block;
-	width: 200px; height: auto;
+	width: 200px;
+	height: auto;
 	vertical-align: text-top;
+	/* cursor: pointer; */
 }
 
 @media only screen and (max-width: 790px) {
@@ -1160,7 +1165,7 @@ TEAM SECTION STYLES --------------------
 .team-member-text .title {
 	position: relative;
 	width: 100%; height: auto;
-	font-family: 'pt_sansbold';
+	font-weight: bold;
 	font-size: 20px; line-height: 1.2em;
 }
 
@@ -1168,7 +1173,7 @@ TEAM SECTION STYLES --------------------
 .team-member-text .subtitle {
 	position: relative;
 	width: 100%; height: auto;
-	font-family: 'pt_sansregular';
+	font-weight: normal;
 	font-size: 16px; line-height: 1.2em;
 }
 
@@ -1221,17 +1226,19 @@ FOOTER NEWSLETTER STYLES --------------------
 .email {
 	position: relative;
 	display: block;
-	width: 100%; height: 55px;
+	width: 100%;
+	height: 55px;
 	padding: 0px;
 	border: none;
 	background-color: #ffffff;
 	color: #9C85FF;
-	font-family: 'pt_sansregular';
-	font-size: 19px; line-height: 55px;
+	font-weight: normal;
+	font-size: 19px;
+	line-height: 55px;
 	text-indent: 25px;
 	text-align: left;
 	-webkit-font-smoothing: antialiased !important;
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
 }
 
 /* Placeholder Colours */
@@ -1274,7 +1281,7 @@ FOOTER NEWSLETTER STYLES --------------------
 	background-color: #ffffff;
 	border: 1px solid #ffffff;
 	color: #9C85FF;
-	font-family: 'pt_sansregular';
+	font-weight: normal;
 	font-size: 19px; line-height: 45px;
 	text-align: center;
 	-webkit-font-smoothing: antialiased !important;
