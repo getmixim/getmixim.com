@@ -57,47 +57,6 @@
 	$(window).load(function(){
 		$("h1").fitText(1.6, { minFontSize: '30px', maxFontSize: '40px' });
 	});
-	
-	//Ship Wobble Function
-
-	$(window).load(function(){
-	
-		function wobble(el, period, xMag, yMag, rotateMag) {
-		  var tick = function () {
-		    var x = (Math.random()-0.5) * xMag;
-		    var y = (Math.random()-0.5) * yMag;
-		    var rotate = (Math.random()-0.5) * rotateMag;
-		    
-		    el.style.transform = 'translate('+x+'px,'+y+'px) rotate('+rotate+'deg)';
-		  }
-		  setInterval(tick, period);
-		}
-		
-		wobble($('.ship')[0], 50, 1.5, 1.2, 0);
-		wobble($('.flame')[0], 50, 3, 4, 3);
-		
-		$('.star').each(function (index) {
-		  var r = (Math.sin(index)*23682.23) % 1.0;
-		  var x = (r * 1225) % 100;
-		  var z = (r * 132.4) % 0.9 + 1.5;
-		  var star = this;
-		  
-		  star.style.height = z*z*30+'px';
-		  star.style.left = x+"%";
-		  // star.style.opacity = 1.2-z/5;
-		  setInterval(function () {
-		    var clock = new Date().getTime()/1000.0;
-		    var yUnclipped = r*12000 + clock*z*z*160;
-		    var y = yUnclipped % 400 - 25;
-		    var x = (Math.floor(yUnclipped / 400) * 12341) % 100;
-		    
-		    star.style.top = y+"%";
-		    star.style.left = x+"%";
-		
-		  }, 1000/30)
-		});
-	
-	});
 
 	//Homepage Slideshow Cycle Function
 
