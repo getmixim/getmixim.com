@@ -11,6 +11,10 @@
       "Redirect": { "HostName": "app.getmixim.com" }
     },
     {
+      "Condition": { "KeyPrefixEquals": "downloads" },
+      "Redirect": { "HostName": "app.getmixim.com" }
+    },
+    {
       "Condition": { "KeyPrefixEquals": "beta" },
       "Redirect": { "HostName": "app.getmixim.com" }
     },
