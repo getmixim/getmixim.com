@@ -1104,7 +1104,6 @@ TEAM SECTION STYLES --------------------
 	display: inline-block;
 	width: 200px; height: auto;
 	vertical-align: text-top;
-	cursor: pointer;
 }
 
 @media only screen and (max-width: 790px) {
@@ -1190,7 +1189,7 @@ TEAM SECTION STYLES --------------------
 	transition: fill 250ms ease-out;
 }
 
-.team-section-wrap .team-member:hover 
+a:hover 
 .team-member-twitter path {
 	fill: #FF5C59 !important;	
 }
