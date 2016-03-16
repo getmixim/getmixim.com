@@ -7,6 +7,10 @@
   },
   "RoutingRules": [
     {
+      "Condition": { "KeyPrefixEquals": "favicon.ico" },
+      "Redirect": { "ReplaceKeyWith": "images/favicon.png" }
+    },
+    {
       "Condition": { "KeyPrefixEquals": "acceptinvite/" },
       "Redirect": { "HostName": "app.getmixim.com" }
     },
