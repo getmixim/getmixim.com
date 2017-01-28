@@ -407,6 +407,39 @@ LEAD IMAGE STYLES --------------------
 }
 }
 
+.lead-image-download-text {
+	margin-top: 55px;
+	color: white;
+	font-size: 21px;
+	font-weight: bold; 
+}
+
+.lead-image-download-button {
+	margin-top: 20px;
+	height: 50px;
+	width: 200px;
+	color: white;
+	font-size: 21px;
+	font-weight: bold;
+	background-color: #ff5c59;
+	padding-top: 9px;
+	text-align: center;
+	border-bottom: 5px solid #b22f2c;
+}
+
+.lead-image-download-button:active {
+	margin-top: 22px;
+	height: 50px;
+	width: 200px;
+	color: white;
+	font-size: 21px;
+	font-weight: bold;
+	background-color: #ff5c59;
+	padding-top: 9px;
+	text-align: center;
+	border-bottom: 3px solid #b22f2c;
+}
+
 .lead-image-wrap .lead-image-content-wrap 
 .lead-image-content .lead-image-newsletter {
 	position: relative;
