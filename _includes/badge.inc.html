@@ -1,0 +1,59 @@
+<div class="star-badge" style="margin: 0 auto">
+    <div class="star-badge-point p0"></div>
+    <div class="star-badge-point p1"></div>
+    <div class="star-badge-point p2"></div>
+    <div class="star-badge-point p3"></div>
+    <div class="star-badge-point p4"></div>
+    <div class="star-badge-point p5"></div>
+    <div class="star-badge-top">Spaces</div>
+    <div class="star-badge-middle">
+        {{ include.middle_text }}
+    </div>
+    <div class="star-badge-bottom">left</div>
+</div>
+<style>
+    @import url(https://fonts.googleapis.com/css?family=Libre+Franklin:800);
+
+    .star-badge {
+        position: relative;
+        width: 8em;
+        height: 8em;
+
+        font-size: 1.0em;
+        display: inline-block;
+    }
+    .star-badge-point {
+        width: 70%;
+        height: 70%;
+        background-color: rgb(255, 92, 89);
+        position: absolute;
+        top: 15%;
+        left: 15%;
+    }
+    .star-badge-point.p1 { transform: rotate(15deg); }
+    .star-badge-point.p2 { transform: rotate(30deg); }
+    .star-badge-point.p3 { transform: rotate(45deg); }
+    .star-badge-point.p4 { transform: rotate(60deg); }
+    .star-badge-point.p5 { transform: rotate(75deg); }
+    .star-badge-top {
+        position: absolute;
+        top: 1.8em;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .star-badge-middle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scaleX(0.9);
+        font-size: 2.9em;
+        font-family: 'Libre Franklin', sans-serif;
+        font-weight: 800;
+    }
+    .star-badge-bottom {
+        position: absolute;
+        bottom: 0.2em;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+</style>
