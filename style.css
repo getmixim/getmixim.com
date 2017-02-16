@@ -1255,7 +1255,7 @@ a:hover
 }
 
 /*
-FOOTER NEWSLETTER STYLES --------------------
+FOOTER STYLES --------------------
 */
 
 .footer-newsletter-wrap {
@@ -1263,96 +1263,33 @@ FOOTER NEWSLETTER STYLES --------------------
 	width: 100%; height: auto;
 	padding-top: 50px;
 	background-color: #9C85FF;
+	color: white;
 	text-align: center;
 }
 
 .footer-newsletter-wrap p {
-	color: #ffffff;
+	color: white;
 }
 
-.footer-newsletter-wrap .footer-newsletter {
-	position: relative;
-	width: 100%; max-width: 500px;
-	height: auto;
-	margin: 0 auto;
-}
-
-.footer-newsletter-wrap .footer-newsletter 
-.email {
-	position: relative;
-	display: block;
-	width: 100%;
-	height: 55px;
-	padding: 0px;
-	border: none;
-	background-color: #ffffff;
+.footer-download-button {
+	margin-top: 20px;
+	height: 50px;
+	padding: 0 50px;
+	color: white;
+	font-size: 21px;
+	font-weight: bold;
 	color: #9C85FF;
-	font-weight: normal;
-	font-size: 19px;
-	line-height: 55px;
-	text-indent: 25px;
-	text-align: left;
-	-webkit-font-smoothing: antialiased !important;
-	text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
-}
-
-/* Placeholder Colours */
-
-.footer-newsletter-wrap .footer-newsletter 
-.email::-webkit-input-placeholder {
-   color: #CBBCFF;
-}
-
-.footer-newsletter-wrap .footer-newsletter 
-.email:-moz-placeholder { /* Firefox 18- */
-   color: #CBBCFF;  
-}
-
-.footer-newsletter-wrap .footer-newsletter 
-.email::-moz-placeholder  {  /* Firefox 19+ */
-   color: #CBBCFF;  
-}
-
-.footer-newsletter-wrap .footer-newsletter 
-.email:-ms-input-placeholder {  
-   color: #CBBCFF;  
-}
-
-.footer-newsletter-wrap .footer-newsletter 
-.email:-o-input-placeholder {  
-   color: #CBBCFF;  
-}
-
-.footer-newsletter-wrap .footer-newsletter 
-#mc-embedded-subscribe {
-	position: relative;
-	display: block;
-	width: 100%; height: 45px;
-	max-width: 165px;
-	padding: 0px;
-	margin: 0 auto;
-	margin-top: 10px;
-	border: none;
-	background-color: #ffffff;
-	border: 1px solid #ffffff;
-	color: #9C85FF;
-	font-weight: normal;
-	font-size: 19px; line-height: 45px;
+	background-color: white;
+	padding-top: 9px;
 	text-align: center;
-	-webkit-font-smoothing: antialiased !important;
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
-    -webkit-transition: all 250ms ease-out;
-    -moz-transition: all 250ms ease-out;
-    -ms-transition: all 250ms ease-out;
-    -o-transition: all 250ms ease-out;
-    transition: all 250ms ease-out;
-    cursor: pointer;
+	border-bottom: 5px solid #dbd2ff;
+	display: inline-block;
 }
 
-.footer-newsletter-wrap .footer-newsletter 
-#mc-embedded-subscribe:hover {
-	background-color: transparent;
-	color: #ffffff;
+.footer-download-button:active {
+	margin-top: 22px;
+	height: 48px;
+	border-bottom-width: 3px;
 }
 
 /*
