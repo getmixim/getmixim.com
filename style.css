@@ -292,6 +292,22 @@ h6 {
 }
 
 /*
+BANNER STYLES --------------------
+*/
+
+.top-banner {
+	padding: 7px;
+	background: linear-gradient(45deg, #2d311a, #141414);
+	color: rgba(255, 255, 255, 0.6);
+	text-align: center;
+	font-size: 13px;
+}
+.top-banner a {
+	color: inherit;
+	text-decoration: underline;
+}
+
+/*
 LEAD IMAGE STYLES --------------------
 */
 
@@ -430,6 +446,17 @@ LEAD IMAGE STYLES --------------------
 	margin-top: 22px;
 	height: 48px;
 	border-bottom-width: 3px;
+}
+
+.lead-log-in {
+	margin-top: 15px;
+	color: white;
+	font-size: 13px;
+	opacity: 0.3;
+}
+.lead-log-in a:link, .lead-log-in a:visited { 
+	color: inherit;
+	text-decoration: underline;
 }
 
 .lead-spaces-left-badge {
