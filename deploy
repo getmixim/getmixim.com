@@ -1,6 +1,5 @@
 #!/bin/sh
 
-set -o errexit
 
 echo "deploy: Installing deps"
 if bundle install --path vendor/bundle; then
@@ -8,6 +7,8 @@ if bundle install --path vendor/bundle; then
 else
   jekyll=jekyll
 fi
+
+set -o errexit
 
 echo "deploy: Building site..."
 $jekyll build
