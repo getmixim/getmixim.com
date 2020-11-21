@@ -1,17 +1,9 @@
 #!/bin/sh
 
-
-echo "deploy: Installing deps"
-if bundle install --path vendor/bundle; then
-  jekyll="bundle exec jekyll"
-else
-  jekyll=jekyll
-fi
-
 set -o errexit
 
 echo "deploy: Building site..."
-$jekyll build
+jekyll build
 echo "deploy: Building site done."
 
 echo "deploy: Updating website config..."
