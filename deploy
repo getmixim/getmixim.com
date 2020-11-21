@@ -3,10 +3,14 @@
 set -o errexit
 
 echo "deploy: Installing deps"
-bundle install --path vendor/bundle
+if bundle install --path vendor/bundle; then
+  jekyll="bundle exec jekyll"
+else
+  jekyll=jekyll
+fi
 
 echo "deploy: Building site..."
-bundle exec jekyll build
+$jekyll build
 echo "deploy: Building site done."
 
 echo "deploy: Updating website config..."
