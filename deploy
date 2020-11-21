@@ -2,8 +2,11 @@
 
 set -o errexit
 
+echo "deploy: Installing deps"
+bundle install --path vendor/bundle
+
 echo "deploy: Building site..."
-jekyll build
+bundle exec jekyll build
 echo "deploy: Building site done."
 
 echo "deploy: Updating website config..."
