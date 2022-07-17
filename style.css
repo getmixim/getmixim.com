@@ -296,11 +296,12 @@ BANNER STYLES --------------------
 */
 
 .top-banner {
-	padding: 7px;
+	padding: 270px 20px;
 	background: linear-gradient(45deg, #2d311a, #141414);
 	color: rgba(255, 255, 255, 0.6);
 	text-align: center;
-	font-size: 13px;
+	font-size: 16px;
+	margin-bottom: 20px;
 }
 .top-banner a {
 	color: inherit;
@@ -442,10 +443,11 @@ LEAD IMAGE STYLES --------------------
 	border-bottom: 5px solid #b22f2c;
 }
 
-.lead-image-download-button:active {
-	margin-top: 22px;
-	height: 48px;
-	border-bottom-width: 3px;
+.lead-image-download-button.disabled {
+	background-color: #7e7e7e;
+	border-bottom: 5px solid #676767;
+	color: white;
+	opacity: 0.3;
 }
 
 .lead-log-in {
@@ -1288,9 +1290,6 @@ FOOTER STYLES --------------------
 .footer-newsletter-wrap {
 	position: relative;
 	width: 100%; height: auto;
-	padding-top: 50px;
-	background-color: #9C85FF;
-	color: white;
 	text-align: center;
 }
 
